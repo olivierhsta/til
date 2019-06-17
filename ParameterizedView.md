@@ -1,4 +1,5 @@
 # How to simulate a parameterized view in Oracle
+Source : https://stackoverflow.com/a/9027492
 
 ### First step : Create a package to store the parameters
 
