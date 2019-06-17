@@ -53,14 +53,17 @@ WHERE
 
 ### Usage
 
-##### Standard
+#### Standard
 ```plsql
 exec MYVIEW_PKG.SET_VALUES(1,2);
 select * from myview;
 ```
 
-##### APEX
+#### APEX
+*PL/SQL Function Body rerutning SQL Query*
 ```plsql
-MYVIEW_PKG.SET_VALUES(1,2);
-select * from myview;
+MYVIEW_PKG.SET_VALUES(:PX_PARAM1, :PX_PARAM2);
+return q'~
+select * from myview 
+~';
 ```
