@@ -39,7 +39,7 @@ end MYVIEW_PKG;
 
 ### Second step : Create the view
 
-```
+```plsql
 SELECT
     something1,
     something2
@@ -54,9 +54,13 @@ WHERE
 ### Usage
 
 ##### Standard
+```plsql
 exec MYVIEW_PKG.SET_VALUES(1,2);
 select * from myview;
+```
 
 ##### APEX
+```plsql
 MYVIEW_PKG.SET_VALUES(1,2);
 select * from myview;
+```
