@@ -1,4 +1,4 @@
-# Bundle JavaScript assets with gulp.js and webpack
+# Bundle JavaScript assets with Gulp.js, Babel and Webpack
 
 I use this config files to bundle ES6 JavaScript code into browser friendly code.
 
