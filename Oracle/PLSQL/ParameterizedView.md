@@ -3,7 +3,7 @@ Source : https://stackoverflow.com/a/9027492
 
 ### First step : Create a package to store the parameters
 
-```plsql
+```sql
 create or replace package MYVIEW_PKG as
   procedure SET_VALUES(P_PARAM1 number, P_PARAM2 number);
 
@@ -40,7 +40,7 @@ end MYVIEW_PKG;
 
 ### Second step : Create the view
 
-```plsql
+```sql
 SELECT
     something1,
     something2
@@ -55,16 +55,16 @@ WHERE
 ### Usage
 
 #### Standard
-```plsql
+```sql
 exec MYVIEW_PKG.SET_VALUES(1,2);
 select * from myview;
 ```
 
 #### APEX
 *PL/SQL Function Body rerutning SQL Query*
-```plsql
+```sql
 MYVIEW_PKG.SET_VALUES(:PX_PARAM1, :PX_PARAM2);
 return q'~
-select * from myview 
+select * from myview
 ~';
 ```
