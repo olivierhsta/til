@@ -18,7 +18,7 @@
 
  | Primary Key                | Lookup Code | Boolean      | Date          | Number       | Language
  | -------------------------- | ----------- | ------------ | ------------- | ------------ | ------------------------
- | `ID_<TABLE_NAME_SINGULAR>` | `RC_<NAME>` | `IND_<NAME>` | `DATE_<NAME>` | `NBR_<NAME>` | `<name>_&lt;FR\</name> | EN\ | AN>`
+ | `ID_<TABLE_NAME_SINGULAR>` | `RC_<NAME>` | `IND_<NAME>` | `DATE_<NAME>` | `NBR_<NAME>` | `<NAME>_<FR \| EN \| AN>`
 
 #### Constraints
 
