@@ -5,7 +5,7 @@ I use this config files to bundle ES6 JavaScript code into browser friendly code
 ## dependencies
 First of all, we need to install all the necessary dependencies.
 ```
-npm install --save-dev gulp gulp-babel@next @babel/core @babel/preset-env webpack-stream
+npm install --save-dev gulp gulp-babel@next @babel/core @babel/preset-env webpack-stream gulp-uglify
 ```
 
 ## webpack.config.js
